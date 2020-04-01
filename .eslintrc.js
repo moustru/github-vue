@@ -13,7 +13,13 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'indent': [ 'error', 2, { "SwitchCase": 1 } ],
+    'array-bracket-spacing': 'off',
+    'space-before-function-paren': 'off',
+    'keyword-spacing': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-explicit-any': 'off'
   },
   overrides: [
     {
